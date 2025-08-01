@@ -1,0 +1,56 @@
+// CSS Variables
+:root {
+  --text-color: #2d2d2d;
+  --text-secondary-color: #c7c7c7;
+  --primary-color: #747bff;
+  --primary-color-hover: #575cc4;
+  --secondary-color: #cd3e24;
+  --action-color: #baf54d;
+  --contrast-color: #4a4a4a;
+  --background-color: #fdfdfd;
+  --box-size: 200px;
+  --border-thickness: 5%;
+}
+
+// App container
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 2rem;
+  min-height: 100vh;
+  background: var(--background-color);
+  color: var(--text-color);
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  // Footer
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-secondary-color);
+    font-size: 0.9rem;
+    margin-top: auto;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 0.5rem;
+  }
+}
